@@ -18,3 +18,9 @@ def convertir_caractere(caractere):
         return 5
     if caractere == "I":
         return 1
+
+def convertir_chaine(chaine):
+    resultat = 0
+    for i in range(len(chaine)):
+        resultat+=convertir_caractere(chaine[i])
+    return resultat
