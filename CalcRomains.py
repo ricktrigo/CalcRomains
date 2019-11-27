@@ -24,3 +24,16 @@ def convertir_chaine(chaine):
     for i in range(len(chaine)):
         resultat+=convertir_caractere(chaine[i])
     return resultat
+
+def convertir_chaine_avec_soustraction(chaine):
+    resultat=0
+    i=1
+    premierEl=convertir_caractere(chaine[0])
+    for i in range(len(chaine)):
+        if convertir_caractere(chaine[i])<=premierEl:
+            resultat += premierEl-convertir_caractere(chaine[i])
+        premierEl = convertir_caractere(chaine[i])
+
+    resultat += convertir_caractere(chaine[i])
+
+    return resultat

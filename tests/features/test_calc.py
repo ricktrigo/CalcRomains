@@ -8,3 +8,7 @@ def test_input_1_caractere():
 
 def test_input_2_caracteres():
     assert CalcRomains.convertir_chaine("II") == 2
+    assert CalcRomains.convertir_chaine("XX") == 20
+
+def test_input_n_caracteres():
+    assert CalcRomains.convertir_chaine_avec_soustraction("MCMXLIV") == 1944
