@@ -22,3 +22,5 @@ def test_input_2_caracteres_avec_soustraction():
     assert CalcRomains.convertir_chaine_avec_soustraction("IV") == 4
     assert CalcRomains.convertir_chaine_avec_soustraction("CM") == 900
 
+def test_input_n_caracteres_avec_soustraction():
+    assert CalcRomains.convertir_chaine_avec_soustraction("MCMXLIV") == 1944

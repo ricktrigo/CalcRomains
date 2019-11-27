@@ -36,7 +36,6 @@ def convertir_chaine_avec_soustraction(chaine):
             if convertir_caractere(chaine[i])<=premierEl:
                 resultat += premierEl-convertir_caractere(chaine[i])
             premierEl = convertir_caractere(chaine[i])
-
         resultat += convertir_caractere(chaine[i])
 
     return resultat
